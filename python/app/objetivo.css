@@ -1,0 +1,151 @@
+html{
+    font-family: sans-serif;
+}
+
+body{
+    margin: 0;
+    background-color: #eee;
+}
+
+.titulo{
+    margin: 0;
+}
+
+#title h1{
+    color: white;
+    margin: 0;
+    text-align: center;
+}
+
+#title{
+    padding:15px;
+    background-color:rgb(50, 50, 51);
+    margin: 0px 250px 0px 250px ;
+    border-radius: 0px 0px 9px 9px;
+    transition: box-shadow 0.4s linear;
+}
+
+#title:hover{
+    box-shadow: 0.1rem 0.1rem 10px 10px rgb(199, 197, 189);
+}
+
+.menu{
+    position: fixed;
+    width: 100px;
+    background-color: rgb(48, 47, 49);
+    border-radius: 0px 5px 5px 5px;
+    transition: box-shadow 0.3s ease;
+}
+
+.menu:hover{
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.5)
+}
+nav div {
+    transition: background-color 0.3s ease; 
+    padding-top: 60px;
+    height: 70px;
+    width: 100px;
+    text-align: center;
+    background-color:rgb(46, 45, 46);
+    border-radius: 5px;
+}
+nav div:hover{
+    background-color:rgb(70, 69, 71);
+}
+nav div a{
+    text-decoration:none;
+    color: white;
+}
+
+.contenedor{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.objetivo{
+    background-color: rgba(219, 224, 224, 0.993);
+    margin: 12px 250px 10px 250px;
+    border-radius: 0.5rem;
+    padding: 0.25rem 0;
+    transition: box-shadow 0.3s ease;
+}
+
+.objetivo:hover{
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.5);
+}
+
+.objetivo h2{
+    text-align: center;
+}
+
+.objetivo p{
+    margin: 10px 1rem;
+}
+
+#separador{
+    text-align: center;
+    background-color: rgba(219, 224, 224, 0.993);
+    margin: 40px 250px 0 250px;
+    border-radius: 0.5rem;
+    padding: 0.25rem 0;
+}
+
+.contenedor2{
+    display: grid;
+    width: 1200px;
+    height: 412px;
+    margin: 0 auto;
+    padding: 0.25rem 0;
+    grid-template-columns: repeat(3, [col-inicio] 2fr [col-fin]);
+    grid-template-rows: repeat(1, [row-inicio] 350px [row-fin]);
+    grid-gap: 10px;
+}
+
+.contenedor2 div{
+    border-radius: 0.5rem;   
+    background-color:rgba(219, 224, 224, 0.993);
+    text-align: center;
+    transition:box-shadow 0.3s ease;
+}
+
+.objetivos:hover{
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.5)
+}
+
+.objetivos h2{
+    padding-top: 20px;
+}
+
+.objetivos p{
+    margin: 20px 10px;
+}
+
+.contenedor2 img{
+    border-radius: 0px 0px 10px 10px; 
+}
+
+
+footer{
+    background-color:rgb(37, 33, 43);
+    color:white;
+    padding: 3rem;
+}
+
+footer section{
+    float: right;
+}
+
+footer p {
+    margin: 0
+}
+
+footer a{
+    padding-right: 20px;
+    transition: color 0.3s ease;
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover{
+    color: rgb(98, 42, 163);
+}

@@ -1,0 +1,56 @@
+//crear una base de datos
+create database ['nombre de la base de datos'];
+
+//eliminar una base de datos
+drop ['nombre de la tabla'];
+
+//utilizar la bse da datos
+use ['nombre de la base de datos'];
+
+//crear una tabla
+create table ['nombre de la tabla'](columna de la tabla); 
+ - // ('se agrega el nombre de la columna y luego el tipo de dato')
+ - // (id int, email varchar(# de caracteres)[se utiliza como string]
+
+//agragar columna a la tabla
+alter table ['nombre de la tabla'] add ['columna' 'tipo de dato'];
+
+//eliminar columna de la tabla
+alter table ['nombre de la tabla'] drop column ['columna'];
+
+//modificar un elemento
+alter table ['nombre de la tabla'] modify column ['columna' 'tipo de dato'];
+
+//insertar un elemento
+insert into ['nombre de la tabla'] ['columna #1' ,'columna #2']
+values ([valor para columna #1],[valor para columna #2])
+
+    //example:
+        insert into Usuario (username,email)
+        values ('elxocas','elcho@gmail.com');
+
+//remover un elemento
+delete from ['nombre de la tabla'] where [columna] = [valor para columna]
+
+//crear una llave primaria
+alter table ['nombre de la tabla'] add primary key ('columna -id-');
+ - // primero se define como llave primaria pero no tiene un valor prestablecido
+alter table ['nombre de la tabla'] modify column 'columna -id-' int auto_increment;
+ - // despues se le define como aoto incrementalpara que valla aumentando cada vez que se le ingresa nueva informacion
+
+//mostrar el contenido
+select * from ['nombre de la tabla'];
+
+//mostrar contenido espesifico
+- select * from ['nombre de la tabla'] where [columna] = [valor para columna];
+- select * from ['nombre de la tabla'] where [columna] < [valor para columna];
+
+//actualizar el contenido
+
+update ['nombre de la tabla'] set [valor a actualizar] = 32 where [columna para actualizar] = "1";
+    NUNCA OLVIDAR EL WHERE !!!, se pueden cambiar todos los valores
+
+//eliminar el contenido
+
+delete from  ['nombre de la tabla'] where [columna a eliminar] = "1";
+    NUNCA OLVIDAR EL WHERE !!!, se puede borar todo el contenidos

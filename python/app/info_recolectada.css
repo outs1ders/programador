@@ -1,0 +1,138 @@
+html{
+    font-family: sans-serif;
+}
+
+body{
+    margin: 0;
+    background-color: #eee;
+}
+
+.titulo{
+    margin: 0;
+}
+
+#title h1{
+    color: white;
+    margin: 0;
+    text-align: center;
+}
+
+#title{
+    padding:15px;
+    background-color:rgb(50, 50, 51);
+    margin: 0px 250px 0px 250px ;
+    border-radius: 0px 0px 9px 9px;
+    transition: box-shadow 0.4s linear;
+}
+
+#title:hover{
+    box-shadow: 0.1rem 0.1rem 10px 10px rgb(199, 197, 189);
+}
+
+.menu{
+    position: fixed;
+    width: 100px;
+    background-color: rgb(48, 47, 49);
+    border-radius: 0px 5px 5px 5px;
+    transition: box-shadow 0.3s ease;
+}
+
+.menu:hover{
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.5)
+}
+nav div {
+    transition: background-color 0.3s ease; 
+    padding-top: 60px;
+    height: 70px;
+    width: 100px;
+    text-align: center;
+    background-color:rgb(46, 45, 46);
+    border-radius: 5px;
+}
+nav div:hover{
+    background-color:rgb(70, 69, 71);
+}
+nav div a{
+    text-decoration:none;
+    color: white;
+}
+
+.contendor{
+    text-align: center;
+    background-color: rgba(219, 224, 224, 0.993);
+    margin: 40px 250px 10px 250px;
+    border-radius: 0.5rem;
+    padding: 15px 30px;
+    transition: box-shadow 0.4s linear;
+}
+
+.contendor:hover{
+    box-shadow: 0 0.1rem 0.5rem rgb(218, 171, 42);   
+}
+
+
+.contendor2{
+    display: grid;
+    width: 1200px;
+    margin: 0 auto;
+    height: 500px;
+    grid-gap: 30px;
+    grid-template-columns: 300px 500px ;
+    grid-template-rows: repeat(1, [row-inicio] 600px [row-fin]);
+}
+
+.post-box{
+    background-color: rgba(219, 224, 224, 0.993);
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    padding: 0.25rem 0;
+    transition: box-shadow 0.3s ease;
+}
+
+.post-box:hover{
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.5);
+}
+
+.post-box h2{
+    margin:0;
+    border-radius: 0.2rem;
+    background-color: rgb(124, 114, 207);
+    padding: 20px 20px 20px 20px;
+} 
+
+.post-box p{
+    padding: 20px 20px 2px 20px;
+}
+
+#post-box2{
+    margin:10px;
+}
+
+#post-box2 img{
+    border-radius: 6px;
+}
+
+footer{
+    background-color:rgb(37, 33, 43);
+    color:white;
+    padding: 3rem;
+}
+
+footer section{
+    float: right;
+}
+
+footer p {
+    margin: 0
+}
+
+footer a{
+    padding-right: 20px;
+    transition: color 0.3s ease;
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover{
+    color: rgb(98, 42, 163);
+}

@@ -1,0 +1,158 @@
+html{
+    font-family: sans-serif;
+}
+
+body{
+    margin: 0;
+    background-color: #eee;
+}
+
+header{
+    background-color:rgb(50, 50, 51);
+    color: white;
+    padding: 3rem;
+}
+
+#titulo{
+    font-size: 1rem;
+    text-align: center;
+}
+
+#enter{
+    text-align: center;
+    padding: 12px;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.5) ;
+}
+
+#enter div{
+    display: inline-block;
+    padding:10px;
+    margin: 5px;
+    transition: box-shadow 0.4s linear;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+#enter div:hover{
+    box-shadow: 0 0.1rem 0.5rem rgb(218, 171, 42);
+}
+
+#enter a{
+    color: black;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+.menu{
+    position: fixed;
+    width: 100px;
+    background-color: rgb(48, 47, 49);
+    border-radius: 0px 5px 5px 5px;
+    transition: box-shadow 0.3s ease;
+}
+
+.menu:hover{
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.5)
+}
+
+
+nav div {
+    transition: background-color 0.3s ease; 
+    padding-top: 60px;
+    height: 70px;
+    width: 100px;
+    text-align: center;
+    background-color:rgb(46, 45, 46);
+    border-radius: 5px;
+}
+nav div:hover{
+    background-color:rgb(70, 69, 71);
+}
+nav div a{
+    text-decoration:none;
+    color: white;
+}
+
+
+
+.contenedor{
+    display: grid;
+    width: 1200px;
+    margin: 0px auto;
+    text-align: center;
+    grid-template-columns: repeat(3, [col-inicio] 2fr [col-fin]);
+    grid-template-rows: repeat(1, [row-inicio] 350px [row-fin]);
+    grid-gap: 10px;
+}
+
+.contenedor p{
+    text-align: justify;
+}
+
+.contenedor a{
+    text-decoration: none;
+    color:black;
+}
+
+.subcontenedor{
+    display: grid;
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    grid-template-columns: repeat(3, [col-inicio] 2fr [col-fin]);
+    grid-template-rows: repeat(1, [row-inicio] 350px [row-fin]);  
+    grid-gap: 10px;
+}
+
+.subcontenedor a{
+    text-decoration: none;
+    color:black;
+}
+
+section article h2, section article p{
+    margin: 1rem;
+}
+section article h2, section article p{
+    margin: 1rem;
+}
+
+section article{
+    transition: box-shadow 0.5s ease;
+    background-color: rgba(219, 224, 224, 0.993);
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    padding: 0.25rem 0;
+    cursor: pointer;
+}
+
+section article:hover{
+    border: 0.1px solid rgb(53, 53, 52);
+    box-shadow: 0.2rem 0.5rem rgb(77, 76, 75);   
+}
+
+
+footer{
+    background-color:rgb(37, 33, 43);
+    color:white;
+    padding: 3rem;
+}
+
+footer section{
+    float: right;
+}
+
+footer p {
+    margin: 0
+}
+
+footer a{
+    padding-right: 20px;
+    transition: color 0.3s ease;
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover{
+    color: rgb(98, 42, 163);
+}

@@ -1,0 +1,70 @@
+Para inciar y trabajar en un repositorio en Github es nesario:
+
+Manajo de llaves SSH:
+	Antes de iniciar a trabajar es nesesario hacer la conexion por medio de llaves con github
+
+1. Creamos una llave desde la terminal
+	
+	ssh-key gen -t rsa -b 4096 -C "tu@email.com"
+
+2. Encendemos el “servidor” de llaves SSH de tu computadora
+	
+	eval $(ssh-agent -s)
+
+3. Añadir tu llave SSH a este “servidor”
+
+	ssh-add ruta-donde-guardaste-tu-llave-privada
+
+4. Ingresas a tu cuenta de github, posterioirmente vas a settings > SSH and GPG keys > new SSH key
+   dentro de este vas a copiar tu llave publica
+	
+	id_rsa.pub
+
+   debes agregarle untitulo que tu elijas y despues guardarla
+
+5. Dirigirte al repositorii dentro de github en el que deseas trabajar en local, copiar el URL SSH y agregarlo al remote
+	
+	git remote add origin URL
+
+
+Manejo del repositorio remoto:
+
+1. Inicializar el repositorio local con git
+	
+	git init
+
+2. Una vez inicializado el repositorio local, debemos conectar un repositorio de GitHub a nuestro documento local
+	
+	git remote add origin URL
+
+3. Una vez echo esto comprobamos el URL de la conexion
+	
+	git remote -v
+
+4. Traer la versión del repositorio remoto y hacer merge para crear un commit con los archivos de ambas partes.
+   Podemos usar git fetch y git merge o solo git pull
+
+	git pull origin main
+
+5. Por último, ahora sí podemos hacer git push para guardar los cambios de nuestro repositorio local en GitHub
+
+	git push origin main
+
+
+Consejo : Para cambiar el URL de git remote aplica la siguiente sintaxis
+
+	git remote set-url origin URL
+
+Git tags
+
+Comandos para trabajar con etiquetas:
+
+	Crear un nuevo tag y asignarlo a un commit: git tag -a nombre-del-tag id-del-commit.
+
+	Borrar un tag en el repositorio local: git tag -d nombre-del-tag.
+	
+	Listar los tags de nuestro repositorio local: git tag o git show-ref --tags.
+
+	Publicar un tag en el repositorio remoto: git push origin --tags.
+
+	Borrar un tag del repositorio remoto: git tag -d nombre-del-tag y git push origin :refs/tags/nombre-del-tag.
