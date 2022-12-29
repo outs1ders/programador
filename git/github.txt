@@ -90,3 +90,225 @@ Cómo se realiza un pull request
 	Se aceptan los cambios en GitHub.
 	
 	Se hace merge a master desde GitHub.
+
+Gitignore
+
+No todos los archivos que agregas a un proyecto deberían ir a un repositorio. Por ejemplo, cuando tienes un archivo 
+donde están tus contraseñas que comúnmente tienen la extensión .env o cuando te estás conectando a una base de datos; 
+son archivos que nadie debe ver.
+
+Por diversas razones, no todos los archivos que agregas a un proyecto deberían guardarse en un repositorio. 
+Esto es porque hay archivos que no todo el mundo debería de ver, y hay archivos que al estar en el repositorio ralentizan 
+el proceso de desarrollo (por ejemplo: los binary large objects, blob, que tardan en descargarse).
+
+Para que no se suban estos archivos no deseados se puede crear un archivo con el nombre .gitignore en la raíz del 
+repositorio con las reglas para los archivos que no se deberían subir: Aquí puedes ver la sintaxis de los .gitignore.
+
+Las razones principales para tomar la decisión de no agregar un archivo a un repositorio son:
+
+	Es un archivo con contraseñas (normalmente con la extensión .env)
+
+	Es un blob (binary large object, objeto binario grande), mismos que son difíciles de gestionar en git.
+
+	Son archivos que se generan corriendo comandos, por ejemplo la carpeta node_modules, que genera npm al 
+	correr el comando npm install
+
+
+git stash
+
+El comando git stash guarda el trabajo actual del Staging en una lista diseñada para ser temporal llamada Stash, 
+para que pueda ser recuperado en el futuro.
+
+Para agregar los cambios al stash se utiliza el comando:
+
+	git stash
+
+Podemos poner un mensaje en el stash, para asi diferenciarlos en git stash list por si tenemos varios 
+elementos en el stash. Ésto con:
+	
+	git stash save "mensaje identificador del elemento del stashed"
+
+Obtener elelmentos del stash
+
+	El stashed se comporta como una Stack de datos comportándose de manera tipo LIFO (del inglés Last In, 
+	First Out, «último en entrar, primero en salir»), así podemos acceder al método pop.
+
+	El método pop recuperará y sacará de la lista el último estado del stashed y lo insertará en el staging 
+	area, por lo que es importante saber en qué branch te encuentras para poder recuperarlo, ya que el stash 
+	será agnóstico a la rama o estado en el que te encuentres. Siempre recuperará los cambios que hiciste en el 
+	lugar que lo llamas.
+
+	Para recuperar los últimos cambios desde el stash a tu staging area utiliza el comando:
+
+		git stash pop
+	
+	Para aplicar los cambios de un stash específico y eliminarlo del stash:
+
+		git stash pop stash@{<num_stash>}
+
+	Para retomar los cambios de una posición específica del Stash puedes utilizar el comando:
+
+		git stash apply stash@{<num_stash>}
+
+Listado de elementos en el stash
+	
+	Para ver la lista de cambios guardados en Stash y así poder recuperarlos o hacer algo con ellos podemos utilizar el comando:
+
+		git stash list
+
+Crear una rama con el stash
+	
+	Para crear una rama y aplicar el stash más reciente podemos utilizar el comando
+
+		git stash branch <nombre_de_la_rama>
+
+	Si deseas crear una rama y aplicar un stash específico (obtenido desde git stash list) puedes utilizar el comando:
+
+		git stash branch nombre_de_rama stash@{<num_stash>}
+
+	Al utilizar estos comandos crearás una rama con el nombre <nombre_de_la_rama>, te pasarás a ella y tendrás el stash 
+	especificado en tu staging area.
+
+		Eliminar elementos del stash
+
+	Para eliminar los cambios más recientes dentro del stash (el elemento 0), podemos utilizar el comando:
+
+		git stash drop
+
+	Pero si, en cambio, conoces el índice del stash que quieres borrar (mediante git stash list) puedes utilizar el comando:
+
+		git stash drop stash@{<num_stash>}
+
+	Si, en cambio, deseas eliminar todos los elementos del stash, puedes utilizar:
+
+		git stash clear
+
+
+Git clean
+
+Mientras estamos trabajando en un repositorio podemos añadir archivos a él, que realmente no forma parte de nuestro directorio 
+de trabajo, archivos que no se deberían de agregar al repositorio remoto.
+
+El comando clean actúa en archivos sin seguimiento, este tipo de archivos son aquellos que se encuentran en el directorio de trabajo, 
+pero que aún no se han añadido al índice de seguimiento de repositorio con el comando add.
+
+	$ git clean
+
+La ejecución del comando predeterminado puede producir un error. La configuración global de Git obliga a usar la opción force 
+con el comando para que sea efectivo. Se trata de un importante mecanismo de seguridad ya que este comando no se puede deshacer.
+
+	Revisar que archivos no tienen seguimiento.
+		
+		$ git clean --dry-run
+
+	Eliminar los archivos listados de no seguimiento.
+		
+		$ git clean -f
+
+Git grep
+
+A medida que nuestro proyecto en Git se hace más grande, vamos a querer buscar ciertas cosas.
+
+	Por ejemplo: ¿cuántas veces en nuestro proyecto utilizamos la palabra color?
+
+Para buscar, empleamos el comando git grep color y nos buscará en todo el proyecto los archivos en donde está la palabra color.
+
+	Con git grep -n color nos saldrá un output el cual nos dirá en qué línea está lo que estamos buscando.
+
+	Con git grep -c color nos saldrá un output el cual nos dirá cuántas veces se repite esa palabra y en qué archivo.
+
+	Si queremos buscar cuántas veces utilizamos un atributo de HTML lo hacemos con git grep -c "<p>".
+
+COMANDOS DE GIT PARA TRBAJO
+
+	git shortlog -sn: muestra cuantos commit han hecho cada miembro del equipo.
+
+	git shortlog -sn --all: muestra cuantos commit han hecho cada miembro del equipo, hasta los que han sido eliminados.
+
+	git shortlog -sn --all --no-merge: muestra cuantos commit ha hecho cada miembro, quitando los eliminados sin los merges.
+
+	git config --global alias.stats “shortlog -sn --all --no-merges”: configura el comando “shortlog -sn --all --no-merges” 
+	en un Alias en las configuraciones globales de git del pc
+
+	git blame ARCHIVO: muestra quien hizo cada cosa línea por línea.
+
+	git COMANDO --help:muestra como funciona el comando.
+
+	git blame ARCHIVO -Llinea_inicial,linea_final: muestra quien hizo cada cosa línea por línea, indicándole desde qué 
+	línea ver. Ejemplo -L35,50.
+
+	git branch -r: se muestran todas las ramas remotas.
+
+	git branch -a: se muestran todas las ramas, tanto locales como remotas.
+
+
+MALAS PRACTICAS Y ULTIMOS RECURSOS
+
+Git Cherry-pick 
+
+Es un comando que permite tomar uno o varios commits de otra rama o branch sin tener que hacer un merge completo. Así, 
+gracias a cherry-pick, podríamos aplicar los commits relacionados con nuestra funcionalidad en la rama master sin necesidad de 
+hacer un merge.
+
+El uso de git cherry-pick es sencillo y se puede ejecutar de la siguiente manera:
+
+	git checkoutmaster
+
+En este ejemplo, commitSha es una referencia de confirmación. Puedes encontrar una referencia de confirmación utilizando 
+el comando git log. En este caso, imaginemos que queremos utilizar la confirmación ‘f’ en la rama master. Para ello, primero
+debemos asegurarnos de que estamos trabajando con esa rama master.
+
+	git cherry-pick f
+
+
+Git Reset y Reflog: úsese en caso de emergencia
+
+Git guarda todos los cambios aunque decidas borrarlos, al borrar un cambio lo que estás haciendo sólo es actualizar la punta 
+del branch, para gestionar éstas puntas existe un mecanismo llamado registros de referencia o reflogs…La gestión de estos cambios 
+es mediante los hash’es de referencia (o ref) que son apuntadores a los commits…Los recoges registran cuándo se actualizaron las 
+referencias de Git en el repositorio local (sólo en el local), por lo que si deseas ver cómo has modificado la historia puedes 
+utilizar el comando:
+
+	git reflog
+
+Muchos comandos de Git aceptan un parámetro para especificar una referencia o “ref”, que es un puntero a una confirmación sobre 
+todo los comandos:
+
+git checkout Puedes moverte sin realizar ningún cambio al commit exacto de la ref
+
+	git checkout eff544f
+
+git reset: Hará que el último commit sea el pasado por la ref, usar este comando sólo si sabes exactamente qué estás haciendo
+
+	git reset --hard eff544f # Perderá todo lo que se encuentra en staging y en el Working directory y se moverá el head al 
+	commit eff544f
+	
+	git reset --soft eff544f # Te recuperará todos los cambios que tengas diferentes al commit eff544f, los agregará al 
+	staging area y moverá el head al commit eff544f
+
+git merge: Puedes hacer merge de un commit en específico, funciona igual que con una branch, pero te hace el merge del estado específico del commit mandado
+
+	git checkout master
+
+	git merge eff544f # Fusionará en un nuevo commit la historia de master 
+	con el momento específico en el que vive
+
+¿Qué pasa cuando todo se rompe y no sabemos qué está pasando? Con git reset HashDelHEAD nos devolveremos al estado en que el 
+proyecto funcionaba.
+
+	git reset --soft HashDelHEAD te mantiene lo que tengas en staging ahí.
+	
+	git reset --hard HashDelHEAD resetea absolutamente todo incluyendo lo que tengas en staging.
+
+
+Git commit --amend
+
+amend puede modificar el commit más reciente (enmendar) en la misma rama. Lo ejecutamos así:
+
+	git add -A # Para hacer uso de amend los archivos deben de estar en staging
+
+	git commit --amend # Remendar último commit
+
+Este comando sirve para agregar archivos nuevos o actualizar el commit anterior y no generar commits innecesarios. 
+También es una forma sencilla de editar o agregar comentarios al commit anterior porque abrirá la consola para editar este 
+commit anterior.

@@ -48,6 +48,8 @@ Analizar cambios en los archivos de un proyecto Git
 	git show filename: permite ver la historia de los cambios en un archivo.
 
 	git diff <commit1> <commit2>: compara diferencias entre en cambios confirmados.
+	
+	git log -s <branch>: Buscan denreo de los commits el uso de esa rama dentro de nuestro historial de git 
 
 Volver en el tiempo con branches y checkout
 
