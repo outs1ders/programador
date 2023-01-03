@@ -1,0 +1,9 @@
+div{
+	width: 200px;
+	height: 200px;
+	background: cyan;
+	padding: 20px;
+	/* box-sizing: border-box; */
+	border: 5px dashed lightseagreen;
+	margin: 20px;
+}
