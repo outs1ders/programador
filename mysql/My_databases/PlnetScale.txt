@@ -1,0 +1,9 @@
+Name: Personal
+
+Branch: main
+Tables: January
+
+Username:	xl69s7ku92pw1aoha2js
+Password:	pscale_pw_1Kz1aMy8gEtR51aJJVK8Q12YYtVq5kYQpQYK3V37691
+
+Mysql CLI: mysql -h aws-sa-east-1.connect.psdb.cloud -u xl69s7ku92pw1aoha2js -ppscale_pw_1Kz1aMy8gEtR51aJJVK8Q12YYtVq5kYQpQYK3V37691 --ssl-mode=VERIFY_IDENTITY --ssl-ca=/etc/ssl/certs/ca-certificates.crt

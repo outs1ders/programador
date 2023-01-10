@@ -1,0 +1,12 @@
+
+Host: bddpt4ummaxxyecmqd8l-mysql.services.clever-cloud.com
+
+Name: bddpt4ummaxxyecmqd8l
+
+User: uu1mseedti4svnor
+
+Password: m56IJgm6DskWElgPo0V9
+
+Port: 3306
+
+Mysql CLI: mysql -h bddpt4ummaxxyecmqd8l-mysql.services.clever-cloud.com -P 3306 -u uu1mseedti4svnor -p bddpt4ummaxxyecmqd8l
