@@ -1,0 +1,40 @@
+body{
+    background-color: #eee;
+}
+
+.flex{
+    display: flex;
+    flex-flow: row wrap;
+    height: 200px;
+}
+
+.red{
+    background-color:red;
+}
+
+/*order funciona con el primer elementento tiene el numero mas bajo hasta el numero mas alto y se hace deelemento por elemento 
+.primera{
+    order:3;
+}
+.segunda{
+    order:2;
+}
+*/
+
+/* flex-grow -- indica las cantidades de espacio en respecto al que es disponible y dado por los elementos*/
+
+/* flex-basis -- le da una cantidad base al contenido y despues los distribuye con flex grow */
+
+/* aling-self -- nos permite aliniar a nuestros items en base al eje principal que utilizamos */
+
+.primera{
+    flex-grow: 1;
+    flex-basis: 120px; 
+    align-self: center;
+}
+
+/* flex grow y flex-basis se pueden clocar de forma corta en flex */
+.segunda{
+    flex: 2 120px; /* flex: [flex-grow] [flex-basis]*/
+    align-self: stretch;
+}

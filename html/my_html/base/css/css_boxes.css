@@ -1,0 +1,35 @@
+body{
+    background-color:lightgray;
+}
+.caja{
+    margin:10px;
+    background-color: lightgreen;
+}
+#cosa{
+    margin: 11px;
+    padding: 20px;
+    border-style: hidden outset dotted dashed ; /* se pueden convinar y las opcines son
+    opciones: hedden,outsed,insed,rigde,groove,dashed,dotted,double,solid*/
+
+    /* definir color y grosr del borde */
+    border-width: 8px;
+    border-color: blue;
+
+    /* boder-* : "pixeles"  "estilo de borde"  "color" */
+    border-left: 6px solid #afa;
+    border-right: 6px dotted red ;
+    border-top: 23px double green ;
+    border-bottom: 10px inset blue ;
+
+    /*definir el redondeado del borde*/
+    border-radius: 20px;
+
+    /* ancho y altura de la caja */
+    height: 100px;
+    width: 100px;
+
+    /* change the color of text */
+    color: darkslategrey;
+
+    background-color:blueviolet;
+}

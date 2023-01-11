@@ -1,0 +1,24 @@
+body{
+    background-color: #eee;
+}
+
+/*#invisible{
+    display: none;
+}*/
+
+p{
+    /* limita la cantidad de espacio */
+    max-width: 350px;
+    /* Le da un una cantidad de espacio espeifica */
+    width: 350px;
+    /* aplicar margen de manera automatica */
+    margin: auto;
+    /* cambiar laposicion esablecda d eun elemento */
+    position: relative; /* fixed: continido fijo , relative: deja el contido moficable pero en su tamaño*/
+    /* movimietos */
+        left: -15px;
+        right: 20px;
+        top: 25px;
+        bottom: -15px;
+    background-color:red;
+}

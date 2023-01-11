@@ -1,0 +1,22 @@
+body{
+    background-color: #eee;
+}
+
+/* Elemento dentro un elemento:  "elemento1"  "elemento2" { "css" } */
+ul li {
+    /* estilo de la biñeta de la lista */
+    list-style-type: none;
+    /* opcion: circle, square, upper-roman, lower-alpha */
+}
+
+ul {
+    background-color: white;
+    border: solid 1px #ddd;
+    border-radius: 6px;
+    padding-left: 0px;
+}
+
+li{
+    border-bottom: solid 1px #ddd;
+    padding: 15px;
+}

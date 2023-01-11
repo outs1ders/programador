@@ -1,0 +1,39 @@
+body{
+    background-color:rgb(223, 219, 219);
+}
+p{
+    /* Tipo de fuente */
+    font-family: serif;
+    /* Estilo de fuente */
+    font-style: oblique;
+    /* Ancho de letra */
+    font-weight:300;
+    /* Tamaño del texto*/
+    font-size: 1.2em;   /* se suele utlizar em o px*/
+    /* color de text */
+    color: #222fff;
+    /* Alinear el texto */
+    text-align:justify; /*opciones: center,right,leght,justify*/
+    /* Identar el texto */
+    text-indent:80px;
+    /* Separacion del texto */
+    line-height:1.7;
+    /*separacion de palabras*/
+    word-spacing: 10px;
+    /* Sobra de colo en el texto*/
+    text-shadow: 3px 3px 8px black; /* usar tambien rgba(r,g,b,"transparencia") */
+    /* opciones: "horizontal" "vertical" "difuminar" "color" */
+}
+
+a{
+    /* Decoracion de texto */
+    text-decoration: none;
+    /* opciones: none, overline, line-throught, underline*/
+
+    /* Transformacion de texto */
+    text-transform:capitalize;
+    /* opciones: uppercase, lowercase, capitalize */
+
+    /* Separacion entre letras */
+    letter-spacing: 3px;
+}

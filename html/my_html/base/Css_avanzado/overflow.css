@@ -1,0 +1,14 @@
+body{
+    background-color: #eee;
+}
+
+#over{
+    width:160px;
+    height:160px;
+    /* manejo del continido de cajas */
+    overflow: auto; /* overflow-x:horizontal   overflow-y:vertical */
+    /*  visble: muestra todo el continido
+        hidden: muestra el contenido que cabe en la caja
+        scroll: permite hacer scroll al contido si hay mucho continido en la caja
+        auto: agrega scroll si es neesario */
+}

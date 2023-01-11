@@ -1,0 +1,34 @@
+body{
+    background-color:#eee;
+    width:300px;
+}
+
+.flex{
+    display:flex;
+    flex-direction: row; /*deja el contenido por defecto*/
+    /*  flex-direction: row-reverse /* inviete la orientacion el contenido
+        flex-direction: colum /* coloca el continido forma de columna
+        flex-direction: colom-reverse /*invierte la columna pera para que      inicie desde abajo debe tenener un height definido
+    */
+
+    /*flex-wrap permite que el contenido baje o no cuando se supera el tamaño del fex */
+
+    flex-wrap: wrap; /* nowrap - no permite hacer wrap o que baje               grap-reverse - inicia en contenido desde abajo hacia arriba*/
+
+    /*flex-flow: permite resumir flex direcction y flex flow en uno solo*/
+        /*  flex-flow: [direction] [wrap]  */
+    flex-flow: row wrap ;
+
+    /*tambien funcionan las propiedades de justify-items y */
+    justify-content:space-evenly;
+    align-items: stretch; /*toma solo un item y no todo el flex*/
+
+    /* align-contente --- tiene que teneru una cantidad para el height*/
+    height: 300px;
+    /*    align-content:  ;
+*/
+}
+
+.red{
+    background-color:red;
+}

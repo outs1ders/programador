@@ -1,0 +1,20 @@
+body{
+    background-color:#eee;
+}
+
+img{
+    /* cambiar la pisocion de la imagen */
+    float:right;    /* opcion: left, right */
+    /*opacity: 0.8;   /* opacidad: 0 - 1 */
+    border: solid 1px white;
+    border-radius: 8px;
+}
+
+img:hover{
+    opacity: 0.8;
+    border: solid 1px red;
+}
+
+div p {
+    color:red;
+}

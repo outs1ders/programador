@@ -1,0 +1,40 @@
+body{
+    background-color: #eee;
+}
+
+p{
+    padding: 20px 130px;
+}
+
+div{
+    margin: 20px;
+    height:50px;
+    width:300px;
+    background-color:white;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+#caja1{
+    border-left: solid 3px red;
+    transition: 0.3s 0.2s;
+}
+
+#caja1:hover{
+    transform: scale(1.08,1.08);
+}
+
+#caja2{
+    border-left: solid 3px green;
+}
+
+#caja2:hover{
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+}
+
+#caja3{
+    border-left: solid 3px blue;
+}
+
+#caja3:hover{
+    background-color: rgba(112, 110, 110, 0.3);
+}

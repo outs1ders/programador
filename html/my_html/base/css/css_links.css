@@ -1,0 +1,37 @@
+body{
+    background-color: #eee;
+}
+
+a{
+    color:hotpink;
+    background-color:indigo;
+    border: solid 2px rgb(53, 1, 90);
+    text-decoration:none;
+    padding: 15px;
+    margin: 15px;
+    border-radius: 6px ;
+}
+
+/* cuando aun no se utiliza el link */
+a:link{
+    color:rgb(184, 29, 55);
+}
+
+/* despues de usar el link */
+a:visited{
+    color:gray;
+}
+
+/* al pasar el maus por encima del link */
+a:hover{
+    color: white;
+    text-decoration:underline;
+    background-color:brown;
+
+}
+
+/* al darle click al link */
+a:active{
+    color:black;
+}
+

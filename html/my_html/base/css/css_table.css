@@ -1,0 +1,31 @@
+body{
+    background-color: #eee;
+}
+
+table {
+    /* Extender latabla a lo ancho*/
+    width: 100%;
+    background-color: #fff;
+    /* Quitar los separadores de la tabla*/
+    border-collapse: collapse;
+}
+
+/* "elemento":nth-child("filtrar")  even (par)  odd(inpar)*/
+tr:nth-child(even){
+    background-color:#f2f2f2;
+}
+
+td{
+    border: 1.5px solid #ddd;
+    padding: 8px;
+}
+
+table th{
+    background-color: #4caf80;
+    color: #fff;
+    text-align:left ;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 8px;
+    padding-right: 8px;
+}

@@ -1,0 +1,38 @@
+body{
+    background-color: #eee;
+}
+
+
+    /* height: 400px;
+    /* backgorund-color: "nombre del color" o #rgb /
+    background-color: grey;
+    /*background-image: url/
+    background-image: url('https://placekitten.com/2400/1600');
+    /* background-repeat: "propiedad" /
+    background-repeat: no-repeat; /* opcion: no-repeat, repeat-x, repeat-y /
+    /* background-position: donde empiece a renderisarce /
+    background-position: left top; /* opcion: right-left    bottom-top /
+    /* background-attachment: bajar con el scroll/
+    background-attachment:scroll;   /* opcion: "scroll:se queda quieta" "fixed:se mueve la imagen junto con el scroll" */
+    /* backgrond-size: "medida de la imagen" o cover: cubre todo el background /
+    background-size: cover;
+
+    /* background: todas las propiedades exepto size /
+    background: gray url('https://placekitten.com/1200/800') no-repeat left top fixed; */
+
+    /* background-color: rgba  hsla /
+    background-color: hsla(284, 33%, 59%, 0.7);
+
+    /* background color degrade
+        backgroun-image: "repeating: repetr de cierta forma"  linear-gradient("direccion",color1,color2, and more colors with rgba or name )/
+    background-image: repeating-linear-gradient(-85deg,red 26%,blue 30%) /* opcion direccion: right,top,bottom,left or grades */
+
+.box{
+    /* box-shadow: horizontal vertical difumunar    "iner":fuera   "inset":adentro */
+    box-shadow: 0px 1px 3px rgba(0,0,0,0.4) inset;
+}
+
+.text{
+    color: white;
+    text-shadow: 0px 1px 0px rgba(240, 10, 10, 1);
+}

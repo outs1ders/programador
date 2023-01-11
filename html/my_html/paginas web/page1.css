@@ -1,0 +1,93 @@
+body{
+    margin: 0;
+    background-image:url(https://www.10wallpaper.com/wallpaper/1920x1080/1309/spot_light_bright-Design_HD_wallpaper_1920x1080.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+
+.presentacion{
+    background-color: rgb(152, 165, 238);
+    font-family:sans-serif;
+    padding: 1px;
+    text-align: center;
+}
+
+.menu{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-gap: 6px ;
+    margin: 10px 40px 1px 40px;
+    font-family:Verdana;
+}
+
+.menu_element{
+    background-color:blueviolet;
+    border: 1px solid gray;
+    border-radius: 5px;
+    box-shadow: 0px 1px 3px black ;
+    text-align: center;
+}
+
+.boton-menu{
+    background-color:blueviolet;
+    color:#fff;
+    padding: 16px;
+    font-size: 16px;
+    border:none;
+    /*cuando pase el maus por encima cambie*/
+    cursor: pointer;
+}
+
+.menu_element {
+    position: relative;
+    display: inline-block;
+}
+
+.menu_element:hover .boton-menu{
+    background-color:green;
+}
+
+.menu_element:hover{
+    background-color:green;
+}
+
+.menu-content{
+    display: none;
+    position:absolute;
+    background-color: rgb(243, 238, 238);
+    min-width: 180px;
+    border-radius: 10px;
+}
+
+.menu-content a{
+    color: black;
+    /* padding: horizontal vertical */
+    padding: 12px 16px;
+    text-decoration:none;
+    display:block;
+    border-radius: 10px;
+}
+
+.menu-content a:hover{
+    background-color:rgb(223, 218, 218);
+
+}
+
+.menu_element:hover .menu-content{
+    display:block;
+}
+
+.contenido_inicio{
+    padding: 12px;
+    font-size:16px;
+    font-family: arial;
+
+}
+
+#definicion{
+    display:flex;
+    flex: 1 100px;
+    flex-direction:row ;
+    height: 200px;
+    justify-content: space-around;
+}
