@@ -1,0 +1,59 @@
+body{
+	background: #ffffff;
+}
+.card{
+	padding: 0;
+	margin: auto;
+	background: lightblue;
+	height: 550px;
+	width: 450px;
+	border-radius: 10px;
+	overflow: hidden;
+	border: solid 1px #8402B5;
+	box-shadow:5px 7px 107px -26px rgba(44, 2, 60,0.50);
+}
+
+.decoration{
+	margin: 0;
+	position: relative;
+	height: 100%;
+	width: 80%;
+	background: #6E0497;
+}
+
+.card div:nth-child(1){
+	border-radius: 30%;
+	transform: rotate(120deg);
+	left: 40%;
+	bottom: 50%;
+}
+
+.card div:nth-child(3){	
+	border-radius: 35%;
+	transform: rotate(291deg);
+	right: 30%;
+	bottom: 60%;
+}
+
+.card div:nth-child(4){
+	border-radius: 20%;
+	left: 65%;
+	bottom: 133%;
+}
+
+.user{
+	height: 130px;
+	width: 130px;
+	position: relative;
+	left: 10%;
+	bottom: 75%;
+	border-radius: 50%;
+	background:aqua;
+	overflow: hidden;
+}
+
+.user img{
+	max-height: 100%;
+	width: auto;
+}
+
