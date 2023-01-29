@@ -1,0 +1,13 @@
+body{
+	background-color: whitesmoke;
+}
+
+div{
+	background-color: lightseagreen;
+}
+
+@media (min-width: 393px){
+	div{
+		background-color: aqua;
+	}
+}
