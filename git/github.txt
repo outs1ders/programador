@@ -5,7 +5,7 @@ Manajo de llaves SSH:
 
 1. Creamos una llave desde la terminal
 	
-	ssh-key gen -t rsa -b 4096 -C "tu@email.com"
+	ssh-keygen -t rsa -b 4096 -C "tu@email.com"
 
 2. Encendemos el “servidor” de llaves SSH de tu computadora
 	
