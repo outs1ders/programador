@@ -1,0 +1,157 @@
+html{
+    font-family: sans-serif;
+}
+
+body{
+    background-color:#1e0d47;
+    margin:0;
+    color:#fff;
+}
+
+a{
+    transition: color 0.4s ease;
+    font: 'Rubik', sans-serif;
+    color:#fff;
+    text-decoration: none;
+    font-weight:700;
+}
+
+a:hover{
+    color:#FCD162;
+}
+
+header{
+    background-color: #635adf;
+    color: white;
+    padding: 15px 30px;
+    width: 1200px;
+    margin: 0px 180px;
+    border-radius: 8px;
+}
+
+#titulo{
+    font-size: 16px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.navbar {
+    width: 425.3px;
+    margin: 0px 37%;
+    background-color: #555;
+    overflow: auto;
+}
+
+/* Navbar links */
+.navbar a {
+    float: left;
+    text-align: center;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+
+}
+
+/* Navbar links on mouse-over */
+.navbar a:hover {
+    background-color: #000;
+}
+
+/* Current/active navbar link */
+.active {
+    background-color: #635adf;
+}
+
+.contenedor{
+    display: grid;
+    width: 900px;
+    margin: 0 auto;
+    height: 500px;
+    grid-gap: 30px;
+    grid-template-columns: 300px 500px ;
+    grid-template-rows: repeat(1, [row-inicio] 600px [row-fin]);
+}
+
+.contenedorImg {
+    position: relative;
+    width: 50%;
+    max-width: 300px;
+    
+}
+
+
+.imagen{
+    display: block;
+    width: 310px;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px #41169149 ;
+    transition: box-shadow 0.3s ease;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.8); /* Black see-through */
+    color: #f1f1f1;
+    width: 200px;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 0px 8px 0px 8px;
+}
+
+.contenedorImg:hover .overlay {
+    opacity: 1;
+}
+
+.imagen:hover {
+    box-shadow: 6px 4px 4px #41169149 ;
+}
+
+.imagen img{
+    margin-top: 8px;   
+}
+
+.post2{
+    margin-top: 25px;
+}
+
+.info{
+    background-color: rgba(116, 105, 214, 0.993);
+    margin: 1px 0;
+    border-radius: 0.2rem;
+    padding: 5px 20px;
+    transition: box-shadow 0.3s ease;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+footer{
+    background-color:rgb(50, 21, 95);
+    color:white;
+    padding: 3rem;
+    font-family: "Rubk", sans-serif;
+}
+
+footer section{
+    float: right;
+}
+
+footer p {
+    margin: 0
+}
+
+footer a{
+    font-family: "Rubk", sans-serif;
+    padding-right: 20px;
+    transition: color 0.3s ease;
+    color: white;
+    text-decoration: none;
+}

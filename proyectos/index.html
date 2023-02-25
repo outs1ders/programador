@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+  	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="./index.css">
+   <title>Inicio</title>
+</head>
+<body>
+   <nav>
+      <div class="navbar-left">
+			<ul>
+				<li>
+					<a href="/">Inicio</a>
+				</li>
+				<li>
+					<a href="/">Aplicacion</a>
+				</li>
+				<li>
+					<a href="/">Integrantes</a>
+				</li>
+				
+			</ul>
+		</div>
+
+		<div class="navbar-right">
+				<ul>
+					<li>
+					<a href="/">RAE</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<section class="encabezado">
+		<div class="contenedor">
+			<img src="img/portada.png" width="700">
+	  	</div>
+	</section>
+
+
+	<section class="informacion">
+
+		<div class="selectorEncabezado">
+			<button class="tablink" onclick="openCity('definicion', this, '#F1E9F5')" id="defaultOpen">Definicion del problema</button>
+			<button class="tablink" onclick="openCity('descripcion', this, '#F1E9F5')">Descripcion del problema</button>
+			<button class="tablink" onclick="openCity('justificacion', this, '#F1E9F5')">Justificacion</button>
+		</div>
+
+		<div id="definicion" class="tabcontent">
+		<h1>Dinificion del problema</h1>
+		<p>La inseguridad a día de hoy representa un factor a tener en cuenta en la vida cotidiana, puede afectar de manera drástica la vida misma de la persona, por ejemplo, en una ciudad como Bogotá podemos encontrar casos de inseguridad desde ser un peatón, hasta robos, falsificaciones, estafas u otros dentro de las mismas zonas residenciales, ahora se expone dicha inseguridad en las zonas residenciales como motivo principal de este proyecto, el cual busca reducir la inseguridad, o, mejor dicho, incrementar la seguridad, tanto al interior como al exterior de las zonas de residencias.</p>
+		</div>
+
+		<div id="descripcion" class="tabcontent">
+		<h1>Descipcion del problema</h1>
+		<p>Este proyecto se iniciará por medio de una investigación para conocer la situación actual de las medidas de seguridad que cada conjunto residencial presenta; por ende, mediante este trabajo investigativo se planteará una interfaz de usuario/ vehículo para el registro y control de entrada /salida, donde contara con datos del conductor, pasajeros(Nombre, Apellido, ID),información del vehículo (Placa) e información a donde se dirigen los visitantes (Torre y apartamento/casa) de los complejos residenciales.</p>
+		</div>
+
+		<div id="justificacion" class="tabcontent">
+		<h1>Justificacion</h1>
+		<p> A partir de la investigación tomada de diferentes fuentes de noticieros web, este proyecto contara con una plataforma de rodillos.En caso donde el residente o visitante, se pedirá y se almacenará la información del vehículo y acompañantes. En caso de que no cuente con vehículo se pedirá la información de los visitantes que ingresen al conjunto, por ejemplo: ID, nombre, apellido, peso, torre/interior y apartamento/casa</p>
+		</div>
+
+		<script src="encabezado.js" ></script>
+
+	</section>
+
+   <footer></footer>
+</body>
+</html>

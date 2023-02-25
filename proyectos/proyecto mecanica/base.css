@@ -1,0 +1,232 @@
+body{
+    background-color:#1e0d47;
+    margin:0;
+    color:#fff;
+}
+
+a{
+    transition: color 0.4s ease;
+    font: 'Rubik', sans-serif;
+    font-size: 10px;
+    color:rgb(181, 207, 34);
+    text-decoration: none;
+    font-weight:700;
+}
+
+a:hover{
+    color:#FCD162;
+}
+
+html body header{
+    display:flex;
+    justify-content: space-between;
+    background-color: #635adf;
+    box-shadow: 3px 0 5px #aaa;
+    padding: 15px 30px;
+}
+
+.logo{
+    font-size:20px;
+    font-family: 'Rubik', sans-serif;
+    display:flex;
+    align-items: center;
+    font-weight:700;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-size: 22px;
+}
+
+body nav ul{
+    list-style-type:none;
+}
+
+
+/* Style the navigation bar */
+.navbar {
+    width: 425.3px;
+    margin: 0px 37%;
+    background-color: #555;
+    overflow: auto;
+}
+
+/* Navbar links */
+.navbar a {
+    float: left;
+    text-align: center;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar links on mouse-over */
+.navbar a:hover {
+    background-color: #000;
+}
+
+/* Current/active navbar link */
+.active {
+    background-color: #635adf;
+}
+
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+@media screen and (max-width: 500px) {
+    .navbar a {
+    float: none;
+    display: block;
+    }
+}
+
+.encabezado{
+    width: 1500px;
+    margin: 0px;
+    padding: 40px;
+    height: 312px;
+}
+
+.tablink {
+    background-color: #555;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 33.33%;
+}
+
+/* Change background color of buttons on hover */
+.tablink:hover {
+    background-color: #777;
+}
+
+/* Set default styles for tab content */
+.tabcontent {
+    color: white;
+    display: none;
+    padding: 50px;
+    text-align: center;
+    border-radius: 0px 0px 7px 7px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 19px;
+}
+
+/* Style each tab content individually */
+#definicion {background-color: #2da9ad;}
+#descripcion {background-color: #477ec5;}
+#justificacion {background-color:rgb(35, 196, 56);}
+
+
+.contenedor{
+    display: grid;
+    grid-template-columns: 830px 530px ;
+    grid-template-rows: repeat(1, [row-inicio] 300px [row-fin]);
+    grid-gap: 20px;
+    margin-bottom: 20px;
+}
+
+.contenedor2{
+    display: grid;
+    grid-template-columns: 800px 500px ;
+    grid-template-rows: repeat(1, [row-inicio] 300px [row-fin]);
+    grid-gap: 20px;
+    margin-bottom: 20px;
+    height: 320px;
+}
+
+.hero-image {
+    margin: 0 0 20px 230px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/objetivos.webp");
+    height: 300px;
+    width: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border-radius: 8px;
+}
+
+.hero-image2 {
+    margin: 0 ;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/estadistica.webp");
+    height: 300px;
+    width: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border-radius: 8px;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: 'Rubik', sans-serif ;
+    font-size: 19px;
+}
+
+.hero-text button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 10px 25px;
+    color: black;
+    background-color: rgb(124, 136, 243);
+    text-align: center;
+    cursor: pointer;
+    font-family: 'Rubik', sans-serif ;
+    font-size: 19px;
+}
+
+.hero-text button:hover {
+    background-color: #555;
+    color: white;
+}
+
+.textObj{
+    background-color: rgb(104, 138, 177);
+    border-radius: 8px;
+    padding: 40px;
+    font-family: 'Rubik', sans-serif ;
+    font-size: 22px;
+}
+
+.textObj2{
+    background-color: rgb(104, 138, 177);
+    border-radius: 8px;
+    padding: 40px;
+    font-family: 'Rubik', sans-serif ;
+    margin: 0 0 0px 270px;
+    font-size: 22px;
+}
+
+footer{
+    background-color:rgb(50, 21, 95);
+    color:white;
+    padding: 3rem;
+    font-family: "Rubk", sans-serif;
+}
+
+footer section{
+    float: right;
+}
+
+footer p {
+    margin: 0
+}
+
+footer a{
+    font-family: "Rubk", sans-serif;
+    padding-right: 20px;
+    transition: color 0.3s ease;
+    color: white;
+    text-decoration: none;
+}
+

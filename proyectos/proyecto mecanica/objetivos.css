@@ -1,0 +1,159 @@
+html{
+    font-family: sans-serif;
+}
+
+body{
+    background-color:#1e0d47;
+    margin:0;
+    color:#fff;
+}
+
+a{
+    transition: color 0.4s ease;
+    font: 'Rubik', sans-serif;
+    color:#fff;
+    text-decoration: none;
+    font-weight:700;
+}
+
+a:hover{
+    color:#FCD162;
+}
+
+header{
+    background-color: #635adf;
+    color: white;
+    padding: 15px 30px;
+    width: 1200px;
+    margin: 0px auto;
+    border-radius: 8px;
+}
+
+#titulo{
+    font-size: 16px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.navbar {
+    width: 425.3px;
+    margin: 0px 37%;
+    background-color: #555;
+    overflow: auto;
+}
+
+/* Navbar links */
+.navbar a {
+    float: left;
+    text-align: center;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+
+}
+
+/* Navbar links on mouse-over */
+.navbar a:hover {
+    background-color: #000;
+}
+
+/* Current/active navbar link */
+.active {
+    background-color: #635adf;
+}
+
+.contenedor1{
+    width: 1100px;
+    margin: 10px auto;
+}
+
+.subtitulo{
+    margin: 20px auto;
+    padding: 15px;
+    background-color: #209aaa;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.subtitulo2{
+    margin: 20px auto 0px auto;
+    padding: 15px;
+    background-color: rgb(35, 196, 56);
+    border-radius: 8px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.contenidoObj{
+    background-color: #209aaa;
+    padding: 20px;
+    margin: 10px 40px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.contenidoObj p{
+    text-align: center;
+}
+
+.contenedor2{
+    display: grid;
+    width: 1200px;
+    height: 430px;
+    margin: 0 auto;
+    padding: 0.25rem 0;
+    grid-template-columns: repeat(3, [col-inicio] 2fr [col-fin]);
+    grid-template-rows: repeat(1, [row-inicio] 350px [row-fin]);
+    grid-gap: 10px;
+}
+
+.contenedor2 div{
+    border-radius: 0.5rem;   
+    background-color:rgba(86, 179, 74, 0.993);
+    text-align: center;
+    transition:box-shadow 0.3s ease;
+}
+
+.objetivos:hover{
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.5)
+}
+
+.objetivos h2{
+    padding-top: 20px;
+}
+
+.objetivos p{
+    margin: 20px 10px;
+    font-size: 20px;
+    font: 'Rubik', sans-serif;
+}
+
+.contenedor2 img{
+    border-radius: 0px 0px 10px 10px; 
+}
+
+footer{
+    background-color:rgb(50, 21, 95);
+    color:white;
+    padding: 3rem;
+    font-family: "Rubk", sans-serif;
+}
+
+footer section{
+    float: right;
+}
+
+footer p {
+    margin: 0
+}
+
+footer a{
+    font-family: "Rubk", sans-serif;
+    padding-right: 20px;
+    transition: color 0.3s ease;
+    color: white;
+    text-decoration: none;
+}

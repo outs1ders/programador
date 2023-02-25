@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Aplicacion</title>
+    <link rel="stylesheet" href="aplicacion.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2? family=Rubik:wght@600;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2? display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id='titulo'>
+        <h1>Aplicacion en la clase</h1>
+    </header>
+
+    <nav>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <div class="navbar">
+        <a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
+        <a class="active1" href="#"><i class="fa fa-fw fa-flag"></i> Aplicacion en la clase</a>
+        <a  href="info.html"><i class="fa fa-fw fa-refresh"></i> Informacion</a>
+        </div>
+    </nav>
+
+    <section class="contenedor2">
+        <div class="subtitulo2">
+            <h1>Uso de la energia</h1>
+        </div>
+    </section>
+
+    <section class="contenedor">
+
+        <div class="subcontenedor">
+        <div class="textcont">
+            <p>Para este desarrollo tenemos en cuenta la energia la cual trae el auto (Mercury Cougar 1968) desde un punto espesifico, hasta el punto donde llega a los rodillos y esta es transmitida por medio del uso de la conservacion de energia cinetica en un momento de inercia<p>
+        </div>
+        <video autoplay muted loop id="myVideo">
+            <source src="video/nini.mp4" type="video/mp4">
+        </video>
+        </div>
+
+        <div class="content">
+            <h2>Muestra de concepto</h2>
+            <button id="myBtn" onclick="myFunction()">ver</button>
+        </div>
+        <script src="video.js"></script>
+    
+    </section>
+
+
+    <section class="contenedor1">
+        <div class="subtitulo">
+            <h1>Mercury Cougar 1968</h1>
+        </div>
+        <div class="contenidoObj">
+            <p>Con una masa de 1418 kg, , el Cougar se puede correr de 0 a 100 km/h en 7,1 segundos, nominalmente con una potencia de 335 HP. <br><br> Sus dimensiones son de 1.887 m de ancho, 4.990m de largo y 1,329 m de alto</p>
+        </div>
+    </section>
+
+    <section>
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 4</div>
+            <img src="img/auto1.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 4</div>
+            <img src="img/auto1-1.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 4</div>
+            <img src="img/auto1-2.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 4</div>
+            <img src="img/auto1-3.jpg" style="width:100%">
+        </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        
+    <script src="slideshow.js"></script>    
+    </section>
+
+    <section class="contenedor1">
+        <div class="subtitulo">
+            <h1>llanta de caucho B1 rigido1</h1>
+        </div>
+        <div class="contenidoObj">
+            <p>Con un coeficiente de friccion de 0,85, con un diametro de 17 pulgadas (0,432 m) y un radio de 8.50 pulgadas (0.432 m) <br> <br> Son idonias por su material para el desarrollo del modelo de esta practica</p>
+        </div>
+    </section> 
+
+    <section>
+        <div class="contenedor3">
+            <img src="img/llanta.png" width="900">
+        </div>
+    </section>
+
+    <section class="contenedor1">
+        <div class="subtitulo">
+            <h1>Plataforma con rodillos</h1>
+        </div>
+        <div class="contenidoObj">
+            <p>Cada rodillo posee un coeficiente friccion de 0.85, cada uno con medidas de 1.10 m de ancho, 0.30 m de alto y un radio de 0.15m <br> <br> Son idonias por su material (caucho) para el desarrollo del modelo de esta practica</p>
+        </div>
+    </section>
+
+    <section>
+        <div class="contenedor3">
+            <img src="img/rodillos.png" width="900">
+        </div>
+    </section>
+
+    <section class="contenedor5">
+        <div class="subtitulo3">
+            <h1>Formulas a utilizar</h1>
+        </div>
+    </section>
+
+    <section class="contenedor4">
+        <article class="post">
+            <div class="objetivos">
+                <h2>Energia cinetica rotacional</h2>
+                <p>Por medio de esta se obtiene la inercia para las llantas y rodillos</p>
+                <img src="img/inercia.png" width="400">
+            </div>
+        </article>
+        <article class="post">
+            <div class="objetivos">
+                <h2>Energia cinetica translacional</h2>
+                <p>Por medio de esta obtenemos la energia del auto</p>
+                <img src="img/translacional.png" width="400" height="220">
+            </div>
+        </article>
+        <article>
+            <div class="objetivos">
+                <h2>conservacion de la energia</h2>
+                <p>Por el uso de esta escucion obtenemos el manejo de la energia en este caso</p>
+                <img src="img/energia.png" width="400">
+            </div>
+        </article>
+    </section>
+
+    <section class="contenedor6">
+        <div class="subtitulo4">
+            <h1>Conservacion de la enerigia en los puntos</h1>
+        </div>
+        <div class="contenidoObj">
+            <img src="img/final.png" width="980">
+        </div>
+    </section>
+
+    <footer>
+        <section>
+            <a href="mailto:@gmail.com">Conocenos aquí</a>
+        </section>
+        <p>Copyright 2022</p>
+    </footer>
+
+</body>
