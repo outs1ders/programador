@@ -78,6 +78,10 @@ nav {
    gap: 15px;
 }
 
+.selector-text{
+   margin-right: 7%;
+}
+
 .tablink {
    float: left;
    border: none;
@@ -97,7 +101,7 @@ nav {
 .tabcontent {
    color: var(--dark-blue);
    display: none;
-   padding: 25px;
+   padding: 0 25px 0 25px;
    text-align: center;
    font-family: 'Poppins', sans-serif;
    font-size: 19px;
