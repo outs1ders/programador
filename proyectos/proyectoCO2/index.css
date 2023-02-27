@@ -1,6 +1,7 @@
 :root {
    --background : #F1E9F5;
    --white: #FFFFFF;
+   --background2: ##f8f6f8;
    --black: #000000;
    --md-blue: #3F8ED9;
    --text-input-field: #F7F7F7;
@@ -13,11 +14,6 @@ body {
    margin: 0;
    font-family: 'Quicksand', sans-serif;
    background-color: var(--background);
-}
-
-body {
-   margin: 0;
-   font-family: 'Quicksand', sans-serif;
 }
 nav {
    display: flex;
@@ -60,10 +56,22 @@ nav {
 
 /* encabezado */
 
+.contenedor {
+   background-color: #F0E4F3;
+   display: flex;
+   justify-content: space-between;
+   width: 100%;
+   height: 30%;
+}
 
-.contenedor img{
-   width: 50%;
-   height: 4,00px;
+.tittle {
+   padding: 5%;
+   font-size: 20px;
+   border-radius: 0 15% 80% 0 ;
+}
+
+.contenedor video{
+   width: 20%;
 }
 
 /* */
@@ -75,16 +83,13 @@ nav {
    height: 20%;
    background-color: #f8f6f8;
 }
-
 .selectorEncabezado{
    display: flex;
    flex-direction: column;
 }
-
 .selectorEncabezado button {
    width: 150px;
 }
-
 .tablink {
    background-color: #5b57d7;
    color: var(--dark-blue);
@@ -96,13 +101,9 @@ nav {
    font-size: 17px;
    width: 33.33%;
 }
-
-/* Change background color of buttons on hover */
 .tablink:hover {
    background-color: #777;
 }
-
-/* Set default styles for tab content */
 .tabcontent {
    color: var(--dark-blue);
    display: none;
@@ -112,7 +113,58 @@ nav {
    font-size: 19px;
 }
 
+
+
 /* Style each tab content individually */
 #definicion {background-color: var(--background);}
 #descripcion {background-color: var(--background)}
 #justificacion {background-color: var(--background);}
+
+/*Analisis*/
+
+.analisis{
+   display: flex;
+   justify-content: space-between;
+}
+.analisis img{
+   width: 50%;
+}
+.analisis div {
+   background-color: #f8f6f8;
+   padding: 50px 35px 0 35px;
+   font-size: 19px;
+   margin: 40px;
+}
+
+/*Objetivos*/
+.objetivos{
+   display: flex;
+   justify-content: space-between;
+   background-color: #f8f6f8;
+}
+.hero-image {
+   width: 500px;
+   height: 200px;
+   background-color: var(--background);
+   position: relative;
+}
+.hero-text {
+   text-align: center;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   color: var(--dark-blue);
+   font-family: 'Poppins', sans-serif;
+   font-size: 25px;
+}
+
+.textObj{
+   background-color: var(--white);
+   border-radius: 1px;
+   padding: 10px;
+   font-family: 'Rubik', sans-serif ;
+   font-size: 16px;
+   color: var(--dark-blue);
+   height: 50%;
+}
