@@ -168,3 +168,20 @@ nav {
    color: var(--dark-blue);
    height: 50%;
 }
+
+/*footer*/
+footer{
+   background-color: var(--white);
+   padding: 5px;
+   font-family: "Rubk", sans-serif;
+}
+
+footer div{
+   padding: 20px;
+   background-color: var(--background);
+}
+
+footer div p {
+   margin: 0;
+   text-align: center;
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+  	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="./Aplicacion.css">
+   <title>Inicio</title>
+</head>
+<body>
+   <nav>
+      <div class="navbar-left">
+			<ul>
+				<li>
+					<a href="index.html">Inicio</a>
+				</li>
+				<li>
+					<a href="Aplicacion.html">Aplicacion</a>
+				</li>
+				<li>
+					<a href="#">Integrantes</a>
+				</li>
+			</ul>
+		</div>
+
+		<div class="navbar-right">
+			<ul>
+				<li>
+				<a href="/">RAE</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+   </nav>
+
+	<section class="selector">
+		<h2>Aplicion y uso de tecnologias </h2>
+		<div class="selectores">
+			<div class="selector-imagenes">
+				<img class="tablink" src="./img/Logos/4.png" onclick="openType('GOES',this)" id="defaultOpen">
+				<img class="tablink" src="./img/Logos/5.png" onclick="openType('IA',this)">
+				<img class="tablink" src="./img/Logos/1.png" onclick="openType('Calculo',this)">
+				<img class="tablink" src="./img/Logos/2.png" onclick="openType('Electricidad',this)">
+				<img class="tablink" src="./img/Logos/3.png" onclick="openType('Estadistica',this)">
+			</div>
+			<div class="selector-text">
+				<div id="GOES" class="tabcontent">
+					<h2>Imagenes satelitales con GOES</h2>
+				</div>
+
+				<div id="IA" class="tabcontent">
+					<h2>Inteligencia Artificial</h2>
+				</div>
+
+				<div id="Calculo" class="tabcontent">
+					<h2>Calculo vectorial</h2>
+				</div>
+
+				<div id="Electricidad" class="tabcontent">
+					<h2>Electricidad y magnetismo</h2>
+				</div>
+
+				<div id="Estadistica" class="tabcontent">
+					<h2>Probabilidad y estadistica</h2>
+				</div>
+				<script src="selector.js"></script>
+			</div>
+			
+		</div>
+	</section>
+
+	<section class="subtitle">
+		<div>
+			<h2>Imagenes satelitales con GOES</h2>
+		</div>
+	</section>
+
+	<section class="app">
+		<div>
+			<h3>A traves del uso de imagenes satelitales de la pagina GOES-easth podemos obtner un revision continua dia a dia del aumento o disminucion continua del CO2 </h3>
+			<button class="app-button">GOES</button>
+		</div>
+		<img src="./img/app1.png" alt="">
+	</section>
+
+	<section class="app">
+		<div id="comentario">
+			<p>La influencia del CO2 en el incremento del calentamiento global respecto al tiempo, es decir cómo esta problemática del calentamiento global ha incrementado al pasar los años. </p>
+		</div>
+		<img src="./img/app2.png" alt="">
+	</section>
+
+	<section class="subtitle">
+		<div>
+			<h2>Inteligencia Artificial basada en redes neuronales</h2>
+		</div>
+	</section>
+
+	<section class="app app2">
+		<video autoplay muted loop id="myVideo">
+			<source src="video/app2.mp4" type="video/mp4">
+		</video>
+		<div>
+			<p>Teniendo en cuenta la problemática planteada, se ha realizado un estudio de investigación de diferentes formas las cuales se ha empleado la inteligencia artificial para detectar los niveles de CO2 en un ambiente específico</p>
+		</div>
+	</section>
+
+	<section class="subtitle">
+		<div>
+			<h2>Imagenes satelitales con GOES</h2>
+		</div>
+	</section>
+
+	<section class="app">
+		<div>
+			<h3>A traves del uso de imagenes satelitales de la pagina GOES-easth podemos obtner un revision continua dia a dia del aumento o disminucion continua del CO2 </h3>
+			<button class="app-button">GOES</button>
+		</div>
+		<img src="./img/app1.png" alt="">
+	</section>
+</body>
