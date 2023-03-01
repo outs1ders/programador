@@ -127,6 +127,9 @@ nav {
    justify-content: space-between;
 }
 .analisis img{
+   width: 60%;
+}
+#planeta{
    width: 50%;
 }
 .analisis div {
@@ -169,6 +172,14 @@ nav {
    height: 50%;
 }
 
+.textObj ul {
+   margin: 40px 0 50px 30px;
+}
+
+.textObj ul li {
+   font-weight: 200;
+   font-size: 18px;
+}
 /*footer*/
 footer{
    background-color: var(--white);

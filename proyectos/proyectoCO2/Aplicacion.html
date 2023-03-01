@@ -18,11 +18,9 @@
 					<a href="index.html">Inicio</a>
 				</li>
 				<li>
-					<a href="Aplicacion.html">Aplicacion</a>
+					<a href="Aplicacion.html">Aplicación</a>
 				</li>
-				<li>
-					<a href="#">Integrantes</a>
-				</li>
+
 			</ul>
 		</div>
 
@@ -37,7 +35,7 @@
    </nav>
 
 	<section class="selector">
-		<h2>Aplicion y uso de tecnologias </h2>
+		<h2>Aplicación y uso de tecnologias </h2>
 		<div class="selectores">
 			<div class="selector-imagenes">
 				<img class="tablink" src="./img/Logos/4.png" onclick="openType('GOES',this)" id="defaultOpen">
@@ -114,14 +112,36 @@
 		</div>
 	</section>
 
-	<section class="app">
-		<div class="ver-imagen">
+	<section class="app app3">
+		<video id="background-video" autoplay loop muted src="./video/app3.mp4"></video>
+		<div id="ver-contenido">
+			<div class="tabcontent" id="Derivada-direccional">
+				<h3>Derivada direccional</h3>
+				<div>
+					<p>Aplicamos la derivada direccional como razón de cambio, de manera en la que podamos evaluar a través de los puntos cardinales ver el cambio con respecto al tiempo.</p>
+				</div>
+			</div>
+			<!--
+			<div class="tabcontent" id="Integral-linea">
+				<h3>Integral de linea</h3>
+				<div>
+					<p>La integral de linea nos ayuda a evaluar el área bajo la curva en un superficie</p>
+				</div>
+			</div>
+		-->
+			<div class="tabcontent"id="Derivada-numerica">
+				<h3>Derivadas parciales numericas</h3>
+				<div>
+					<p>La solución de ecuaciones en derivadas parciales es uno de los clásicos dolores de cabeza a los que se enfrentan los profesionales de la ingenierıa; los modelos matemáticos que hacen uso de ellos son muy comunes y están presentes en todas las ramas de la fısica: electromagnetismo, térmica, mecánica clásica y de fluidos, entre muchas otras.</p>
+				</div>
+			</div>
+		</div>
+		<div id="selector-calculo">
+			<img class="tablink" src="./img/calculo-proyecto/1.png" onclick="openType('Derivada-direccional',this)" id="defaultOpen">
+			<!--<<img class=>"tablink" src="./img/calculo-proyecto/2.png" onclick="openType('Integral-linea',this)">-->
+			<img class="tablink" src="./img/calculo-proyecto/3.png" onclick="openType('Derivada-numerica',this)">
+		</div>
 
-		</div>
-		<div class="selector-calculo">
-			<img class="imagen-calculo" src="./img/calculo-proyecto/1.png">
-			<img class="imagen-calculo" src="./img/calculo-proyecto/2.png">
-			<img class="imagen-calculo" src="./img/calculo-proyecto/3.png">
-		</div>
+		<script></script>
 	</section>
 </body>

@@ -13,3 +13,4 @@ function openType(number, elmnt){
    document.getElementById(number).style.display = "block";
 }
 
+   document.getElementById("defaultOpen").click();

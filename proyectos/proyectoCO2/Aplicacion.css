@@ -180,10 +180,84 @@ nav {
 }
 
 /* Calculo */
-.selector-calculo{
-   display: grid;
-   
+.app3{
+   width: 100%;
+   height: 100%;
+   position: relative;
 }
 
-.selector-calculo
+#background-video{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   position: absolute;
+   left: 0;
+   right: 0;
+   top: 0;
+   bottom: 0;
+   z-index: 0;
+}
+.app3 div {
+   padding: 10px;
+   background-color: var(--background);
+   z-index: 1;
+}
+.app3 div {
+   border-radius: 10px;
+}
+#ver-contenido{
+   padding: 5px;
+   width: 900px;
+   background-color: #f8f6f8;
+}
+#Derivada-direccional{
+   margin: 10px;
+   height: 91%;
+}
+#Derivada-direccional div{
+   padding: 15px;
+   background-color: #f8f6f8;
+}
+#Derivada-direccional div p{
+   text-align: justify;
+}
 
+#Integral-linea{
+   margin: 10px;
+   height: 91%;
+}
+#Integral-linea div{
+   padding: 15px;
+   background-color: #f8f6f8;
+}
+#Integral-linea div p{
+   text-align: justify;
+}
+
+#Derivada-numerica{
+   margin: 10px;
+   height: 91%;
+}
+#Derivada-numerica div{
+   padding: 15px;
+   background-color: #f8f6f8;
+}
+#Derivada-numerica div p{
+   text-align: justify;
+}
+
+#selector-calculo{
+   display: grid;
+   grid-template-columns: repeat(1,180px);
+   grid-template-rows: repeat(2,150px);
+   margin-right: 10%;
+}
+.app3 div img{
+   align-self: center;
+   width: 100%; 
+   border-radius: 5px;
+}
+.app3 div img:hover{ 
+   border-radius: 12px;
+   width: 90%;
+}
