@@ -1,0 +1,143 @@
+:root {
+   --background : #F1E9F5;
+   --white: #FFFFFF;
+   --background2: ##f8f6f8;
+   --black: #000000;
+   --md-blue: #3F8ED9;
+   --text-input-field: #F7F7F7;
+   --dark-blue: #141942;
+   --sm: 14px;
+   --md: 16px;
+   --lg: 18px;
+}
+body {
+   margin: 0;
+   font-family: 'Quicksand', sans-serif;
+   background-color: var(--background);
+}
+nav {
+   display: flex;
+   justify-content: space-between;
+   padding: 0 30px;
+   border-bottom: 1px solid var(--md-blue);
+}	
+.menu {
+   display: none;
+}
+.logo {
+   width: 100px;
+}
+.navbar-left ul, .navbar-right ul{
+   list-style: none;
+   padding: 0;
+   margin: 0;
+   display: flex;
+   align-items: center;
+   height: 60px;
+}
+.navbar-left {
+   display: flex;
+}
+.navbar-left ul {
+   margin-left: 12px;
+}
+.navbar-left ul li a, .navbar-right ul li a {
+   text-decoration: none;
+   color: var(--dark-blue);
+   border: 1px solid var(--background);
+   padding: 8px;
+   border-radius: 8px;
+}
+.navbar-left ul li a:hover, .navbar-right ul li a:hover {
+   color: var(--dark-blue);
+   border: 1px solid var(--md-blue);
+   background-color: var(--md-blue);
+}
+
+/*selector RAE*/
+
+
+
+.selector{
+   display: flex;
+   justify-content: space-between;
+   position: relative;
+}
+
+.Rae{
+   width: 50%;
+   padding: 30px;
+}
+
+.Rae div h2{
+   color: var(--dark-blue);
+   text-align: center;
+}
+
+.Raes{
+   width: 35%;
+   padding: 30px;
+   display: grid;
+   grid-template-columns: repeat(5, 80px);
+   grid-template-rows: repeat(2, 110px);
+   gap: 10px;
+}
+
+.Raes img{
+   width: 80px;
+   height: 110px;
+   object-fit: cover;
+   border-radius: 2px;
+}
+
+.Raes img:hover{
+   transition: 0.5s ease;
+   border-radius: 4px;
+   box-shadow:-2px -2px 19px -1px rgba(140, 140, 205, 0.75);
+}
+
+
+
+.tablink {
+   float: left;
+   border: none;
+   outline: none;
+   cursor: pointer;
+   font-size: 17px;
+   width: 100px;
+   border-radius: 10px;
+}
+.tablink:hover {
+   width: 100px;
+   transition: 0.7s ease;
+   border-radius: 25px;
+   box-shadow:-2px -2px 18px -1px rgba(111, 125, 137, 0.75)
+}
+
+.tabcontent {
+   background-color: #FFFFFF;
+   color: var(--dark-blue);
+   display: none;
+   padding: 0 25px 0 25px;
+   text-align: center;
+   font-family: 'Poppins', sans-serif;
+   font-size: 19px;
+   margin-bottom: 10px;
+   padding: 15px;
+   border-radius: 8px;
+   box-shadow:-1px -1px 10px -1px rgb(124, 136, 243, 0.75);
+}
+
+.tabcontent:hover{
+   transition: 0.5s ease;
+   border-radius: 15px;
+   box-shadow:-2px -2px 39px -1px rgb(124, 136, 243, 0.75);
+}
+
+.tabcontent img {
+   width: 50%;
+}
+.tabcontent h2 {
+   padding-bottom: 30px;
+   border-bottom: 1px solid #3F8ED9;
+}

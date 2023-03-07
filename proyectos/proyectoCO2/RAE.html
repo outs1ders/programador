@@ -1,12 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>RAE</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+  	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="./RAE.css">
+   <title>Inicio</title>
 </head>
 <body>
-   
+   <nav>
+      <div class="navbar-left">
+			<ul>
+				<li>
+					<a href="/">Inicio</a>
+				</li>
+				<li>
+					<a href="Aplicacion.html">Aplicación</a>
+				</li>
+			</ul>
+		</div>
+
+		<div class="navbar-right">
+				<ul>
+					<li>
+					<a href="#">RAE</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+   <section class="selector">
+      <div class="Rae" >
+         <div class="tabcontent" id="recursos-hidricos">
+				<h2>Cambio climático y recursos hídricos en Colombia</h2>
+				<a href="./pdf/1. RAE.docx.pdf"><img src="./img/Raes/1.png"></a>
+			</div> 
+			<div class="tabcontent" id="salud-humana">
+				<h2>Cambio climático y su impacto sobre la salud humana</h2>
+				<a href="./pdf/2. RAE.docx.pdf"><img src="./img/Raes/1.png"></a>
+			</div>
+			<div class="tabcontent" id="deforestación">
+				<h2>Deforestación y fragmentación en las áreas más biodiversas de la Cordillera Occidental de Antioquia (Colombia)</h2>
+				<a href="./pdf/3. RAE.docx.pdf"><img src="./img/Raes/1.png"></a>
+			</div>
+			<div class="tabcontent" id="effects">
+				<h2>Effects of deforestation and forest degradation on ecosystem service indicators across the Southwestern Amazon</h2>
+				<a href="./pdf/4. RAE.docx.pdf"><img src="./img/Raes/1.png"></a>
+			</div>
+			<div class="tabcontent" id="global">
+				<h2>A global synthesis of hydrological sensitivities to deforestation and forestation</h2>
+				<a href="./pdf/1. RAE.docx.pdf"><img src="./img/Raes/1.png"></a>
+			</div>
+			<div class="tabcontent" id="assessment">
+				<h2>Assessment of livestock greenhouse gases in Colombia between 1995 and 2015</h2>
+				<a href="./pdf/1. RAE.docx.pdf"><img src="./img/Raes/1.png"></a>
+			</div>
+			<div class="tabcontent">
+				<h2>Cambio climático y recursos hídricos en Colombia</h2>
+			</div>
+			<div class="tabcontent">
+				<h2>Cambio climático y recursos hídricos en Colombia</h2>
+			</div>
+			<div class="tabcontent">
+				<h2>Cambio climático y recursos hídricos en Colombia</h2>
+			</div>
+			<div class="tabcontent">
+				<h2>Cambio climático y recursos hídricos en Colombia</h2>
+			</div>
+      </div>
+      <div class="Raes">
+         <img src="./img/Raes/1.png" onclick="openType('recursos-hidricos',this)">
+         <img src="./img/Raes/2.png" onclick="openType('salud-humana', this)">
+			<img src="./img/Raes/3.png" onclick="openType('deforestación',this)">
+			<img src="./img/Raes/4.png" onclick="openType('effects', this)">
+			<img src="./img/Raes/5.png" onclick="openType('global', this)">
+			<img src="./img/Raes/6.png" onclick="openType('assessment')">
+			<img src="./img/Raes/7.png" onclick="openType()">
+			<img src="./img/Raes/8.png" onclick="openType()">
+			<img src="./img/Raes/9.png" onclick="openType()">
+			<img src="./img/Raes/10.png" onclick="openType()">
+		</div>
+
+		<script src="selector.js"></script>
+   </section>
 </body>
 </html>
